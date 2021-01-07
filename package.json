@@ -1,0 +1,16 @@
+{
+  "name": "Anime-Bot-Telegram",
+  "version": "1.0.0",
+  "description": "Anime helper for telegram.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "YanKun",
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "3.0.6",
+    "node-telegram-bot-api": "0.51.0"
+  }
+}
