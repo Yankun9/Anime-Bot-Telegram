@@ -59,8 +59,13 @@ const execute_command = (cmd, bot, msg, match) => {
 
 }
 
+// start button
+bot.onText(new RegExp(`^[${config.prefix}]start`), (msg, match) => {
+    bot.sendMessage(msg.chat.id, `hi, need help? use ${config.prefix}commands`, { parse_mode: 'HTML'})
+})
+
 // see commands
-bot.onText(new RegExp(`^[${config.prefix}]commands`, 'gmsi'), (msg, match) => {
+bot.onText(new RegExp(`^[${config.prefix}]commands`), (msg, match) => {
     
     let message = '🔓 COMMANDS 🔓\n\n'
     Object.keys(commands).forEach(cmd => {
