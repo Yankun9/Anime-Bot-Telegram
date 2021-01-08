@@ -93,3 +93,9 @@ bot.on('message', (msg) => {
         });
     }
 })
+
+const ready = async function() {
+    console.clear()
+    let bot_info = await bot.getMe()
+    console.log(`bot is running, bot name: ${bot_info.first_name}`)
+}()
