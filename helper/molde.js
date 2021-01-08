@@ -168,6 +168,9 @@ module.exports = {
                         retorno['status'] = 43
                     break
 
+                    default:
+                        retorno['status'] = 500
+
                 }
             break
 
@@ -308,6 +311,9 @@ module.exports = {
                     case 'thriller':
                         retorno['status'] = 45
                     break
+
+                    default:
+                        retorno['status'] = 500
                 }
             break
 
